@@ -1,0 +1,21 @@
+import java.util.*;
+class Coding1
+{
+ public static void main(String args[])
+ {
+   String str,rev="";
+   Scanner sc=new Scanner(System.in);
+   str=sc.nextLine();
+   String ch[]=str.split(" ");
+   for(int i=0;i<ch.length;i++)
+   { 
+    String s=ch[i];
+    for(int j=(s.length())-1;j>=0;j--)
+    {
+     rev=rev+s.charAt(j);
+    }
+   rev=rev+" ";
+   }
+  System.out.print(rev);
+  }
+}
